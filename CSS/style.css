@@ -1,0 +1,35 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+.lista{
+    margin-left:25%;
+    margin-top: 10%;
+    text-align: left;
+}
+
+.barra {
+    background-color: rgb(0, 162, 255);
+    height: 40px;
+    width:100%;
+    gap: 30px;
+    font-size: 150%;
+    display: flex; 
+    justify-content: flex-end;
+    position: fixed;
+    
+    
+}
+
+.nombre{
+   color: white;
+   margin: 6px;
+   width: 4em;
+   text-align: center;
+}
+
+.menu{
+    color: red;
+    
+}
+
