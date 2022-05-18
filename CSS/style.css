@@ -1,7 +1,7 @@
 * {
     margin: 0;
     padding: 0;
-}
+} 
 .lista{
     margin-left:25%;
     margin-top: 10%;
@@ -17,8 +17,9 @@
     display: flex; 
     justify-content: flex-end;
     position: fixed;
-    
-    
+    top: 0;
+    width: 100%;
+   
 }
 
 .nombre{
@@ -28,8 +29,4 @@
    text-align: center;
 }
 
-.menu{
-    color: red;
-    
-}
 
