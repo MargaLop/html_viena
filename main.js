@@ -27,7 +27,15 @@ window.onload = function ()
         currentUl.append(newLi);
     }
 
+    var eliminarTarea = function()
+    {
+        var lastTask=currentUl[currentUl.length-1]
+        lastTask.parentNode.removeChild(lastTask)
+    }
+
+
     var btn = document.getElementById("add-task");
+    var btnRemove = document.getElementById("remove-task");
     var areaTexto = document.getElementById("nueva-tarea");
     var currentUl = document.getElementById("lista-interactiva");
     var contador = 0;
@@ -46,8 +54,10 @@ window.onload = function ()
         localStorage.setItem('listaTareas',  JSON.stringify(listaTareas));
     }
 
-    /*btn.clear = function()
+    btnRemove.onclick = function()
     {
-        localStorage.clear()
-    }*/
+        eliminarTarea()
+        listaTareas.slice(-1)
+        localStorage.setItem('listaTareas',  JSON.stringify(listaTareas));
+    }
 }
