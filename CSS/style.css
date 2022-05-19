@@ -6,6 +6,7 @@
 body{
     background-color: rgb(219, 182, 138);
 }
+
 .lista{
 
     margin-left:25%;
@@ -39,4 +40,7 @@ body{
 }
 .par{
     color:white;
+}
+.boton{
+    color: brown;
 }
