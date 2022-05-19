@@ -27,13 +27,6 @@ window.onload = function ()
         currentUl.append(newLi);
     }
 
-    var eliminarTarea = function()
-    {
-        var lastTask=currentUl[currentUl.length-1]
-        lastTask.parentNode.removeChild(lastTask)
-    }
-
-
     var btn = document.getElementById("add-task");
     var btnRemove = document.getElementById("remove-task");
     var areaTexto = document.getElementById("nueva-tarea");
@@ -56,8 +49,7 @@ window.onload = function ()
 
     btnRemove.onclick = function()
     {
-        eliminarTarea()
-        listaTareas.slice(-1)
-        localStorage.setItem('listaTareas',  JSON.stringify(listaTareas));
+        localStorage.clear();
+        location.reload();
     }
 }
