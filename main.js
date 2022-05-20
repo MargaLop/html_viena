@@ -28,7 +28,7 @@ window.onload = function ()
     }
 
     var btn = document.getElementById("add-task");
-    var btnRemove = document.getElementById("remove-task");
+    var btnClear = document.getElementById("remove-list");
     var areaTexto = document.getElementById("nueva-tarea");
     var currentUl = document.getElementById("lista-interactiva");
     var contador = 0;
@@ -47,9 +47,16 @@ window.onload = function ()
         localStorage.setItem('listaTareas',  JSON.stringify(listaTareas));
     }
 
-    btnRemove.onclick = function()
+
+
+    var limpiarLista= function()
+     {
+        currentUl.innerHTML = ""
+     }
+    btnClear.onclick = function()
     {
         localStorage.clear();
-        location.reload();
+        limpiarLista();
     }
+
 }

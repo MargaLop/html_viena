@@ -4,7 +4,7 @@
     
 } 
 body{
-    background-color: rgb(219, 182, 138);
+    background-color: #85A8E6;
 }
 
 .lista{
@@ -15,7 +15,7 @@ body{
 }
 
 .barra {
-    background-color: rgb(0, 162, 255);
+    background-color: #3B4B66;
     height: 40px;
     width:100%;
     gap: 30px;
@@ -29,18 +29,18 @@ body{
 }
 
 .nombre{
-   color: white;
+   color: #8EB3F5;
    margin: 6px;
    width: 4em;
    text-align: center;
 }
 
 .impar{
-    color: brown;
+    color: #3c62a3;
 }
 .par{
-    color:white;
+    color:#c1d1f0;
 }
-.boton{
-    color: brown;
+.boton,P{
+    color: #3B4B66;
 }
